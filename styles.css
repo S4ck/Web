@@ -1,40 +1,58 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-h1 {
-  text-align: center;
-}
-
-form {
-  max-width: 500px;
+header, section, footer {
+  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
+h1, h2 {
+  color: #333;
+}
+
+/* Estilos del formulario */
 label {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
-textarea {
+input[type="tel"] {
   width: 100%;
-  padding: 5px;
-  margin-top: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-input[type="submit"] {
-  display: block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #337ab7;
+button {
+  background-color: #007bff;
   color: #fff;
+  padding: 10px 20px;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #23527c;
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos del footer */
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
 }

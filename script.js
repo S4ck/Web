@@ -1,19 +1,22 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
+// Manejo del envío del formulario
+const registroForm = document.getElementById("registroForm");
 
-  // Obtiene los valores ingresados por el usuario
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
+registroForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Evitar que el formulario se envíe de forma predeterminada
 
-  // Realiza la validación de los campos (puedes agregar validaciones adicionales aquí)
+    // Obtener valores de los campos del formulario
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const telefono = document.getElementById("telefono").value;
+    const empresa = document.getElementById("empresa").value;
 
-  // Procesa los datos del formulario
-  // Aquí puedes agregar código para enviar los datos a través de correo electrónico o guardarlos en una base de datos
+    // Puedes realizar acciones adicionales aquí, como enviar los datos a un servidor o mostrar un mensaje de confirmación
+    // Por ahora, simplemente mostraremos los valores en la consola
+    console.log("Nombre: " + nombre);
+    console.log("Correo Electrónico: " + email);
+    console.log("Teléfono: " + telefono);
+    console.log("Empresa: " + empresa);
 
-  // Muestra un mensaje de éxito
-  alert("¡Gracias por tu mensaje! Pronto nos pondremos en contacto contigo.");
-
-  // Limpia el formulario
-  document.getElementById("contactForm").reset();
+    // Limpiar los campos del formulario después de enviar
+    registroForm.reset();
 });

@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Formulario de Contacto</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page de Tecnología</title>
 </head>
 <body>
-  <h1>Formulario de Contacto</h1>
-  <form id="contactForm" action="" method="post">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required>
+    <header>
+        <h1>Landing Page de Tecnología</h1>
+        <p>Bienvenido a nuestra página de tecnología.</p>
+    </header>
 
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" required>
+    <section id="formulario">
+        <h2>Regístrate para obtener más información</h2>
+        <form id="registroForm">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="campo">
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa">
+            </div>
+            <div class="boton">
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+    </section>
 
-    <label for="message">Mensaje:</label>
-    <textarea id="message" name="message" required></textarea>
+    <footer>
+        <p>&copy; 2023 Landing Page de Tecnología</p>
+    </footer>
 
-    <input type="submit" value="Enviar">
-  </form>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
